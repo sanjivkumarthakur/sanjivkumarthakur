@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANJIV KUMAR THAKUR - Personal Website</title>
+    <style>
+        /* Your existing styles */
+
+        /* Style for the login modal */
+        .login-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .login-modal label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .login-modal input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .login-modal button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Your existing HTML code -->
+
+    <div class="login-modal" id="loginModal">
+        <h2>Login</h2>
+        <label for="loginUsernameOrEmail">Username or Email:</label>
+        <input type="text" id="loginUsernameOrEmail" name="loginUsernameOrEmail" required>
+
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword" required>
+
+        <button onclick="checkLogin()">Login</button>
+    </div>
+
+    <script>
+        // Your existing scripts
+
+        // Function to show the login modal
+        function showLoginModal() {
+            document.getElementById("loginModal").style.display = "block";
+        }
+
+        // Function to check login credentials
+        function checkLogin() {
+            var enteredUsernameOrEmail = document.getElementById("loginUsernameOrEmail").value;
+            var enteredPassword = document.getElementById("loginPassword").value;
+
+            // Check credentials (replace with your authentication logic)
+            if (enteredUsernameOrEmail === "yourUsername" && enteredPassword === "yourPassword") {
+                alert("Login successful! Welcome, Sanjiv Kumar Thakur!");
+                document.getElementById("loginModal").style.display = "none";
+            } else {
+                alert("Invalid credentials. Please try again.");
+            }
+        }
+    </script>
+
+    <!-- Login button -->
+    <button onclick="showLoginModal()">Login</button>
+
+</body>
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANJIV KUMAR THAKUR - Personal Website</title>
+    <style>
+        body {
+            font-family: Monotype Corsiva, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .photo-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .photo {
+            width: 30%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SANJIV KUMAR THAKUR</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home </a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact  </a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to My Personal Website</h2>
+        <p>Hello, and thank you for visiting! I'm Sanjiv, a passionate web developer with a love for creating innovative and user-friendly websites. Here, you'll find a glimpse into my world, exploring my projects, experiences, and a bit about who I am. Whether you're here for inspiration, to learn more about web development, or simply to get to know me better, I hope you enjoy your stay. Feel free to explore the various sections and don't hesitate to reach out if you have any questions or just want to connect. Happy browsing!</p>
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>“💞MR. Sanjiv💞<br>
+			✔Single kid👼<br>
+			✔Photo designer💻<br>
+			🏍Speed rideR🚴<br>
+			👸Girls Respect👸<br>
+			💜foodie Love🍔"<br>
+		</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="photo-container">
+            <img class="photo" src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/424905869_892933892571348_2750459713104305294_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=EltuzGbWZjsAX8XSpYx&_nc_ht=scontent.fktm7-1.fna&oh=00_AfBNk0wH7uREF3tnEPy8e6Z5RX4Bx_RV7_RnVBoc53hG4Q&oe=65D483F3" alt="Photo 1">
+            <img class="photo" src="https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/410176454_355173557270188_5775229736588492328_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=wmhaOHRs4VkAX_0a62A&_nc_ht=scontent.fktm10-1.fna&oh=00_AfCKHtziHYGJQSlyUAcOXyFjbT7SlvrMITS0WJAVE6OQkA&oe=65D5C54F" alt="Photo 2">
+            <img class="photo" src="https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/402153097_841818511016220_4436228592237869988_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=783fdb&_nc_ohc=PBJCk6JAoDIAX_QaoQh&_nc_ht=scontent.fktm10-1.fna&oh=00_AfArCd88YtKpFbB7x70g_-NBttAbtiK9bIyPsx5bwH2Bbw&oe=65D52053" alt="Photo 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+		 <button onclick="Facebook()">FACEBOOK</button>
+		 <button onclick="whatsapp()">WHATSAPP</button><br><br><br><br><br><br><br><br>
+        Thanks for visiting!
+    </section>
+
+   <footer>
+        <p>&copy; 2024 Sanjiv Kumar Thakur - Personal Website</p>
+    </footer>
+ 
+
+    <script>
+        function changeBackgroundColor() {
+            const colors = ['#ffcc00', '#66ccff', '#ff99cc', '#99ff99', '#ccccff'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+		function Facebook()
+		{
+		  window.open("https://www.facebook.com/profile.php?id=100055642376948&mibextid=LQQJ4d");
+		}
+		function whatsapp()
+		{
+		 alert("Whatsapp Number: 9746297764");
+		}
+	</script>
+
+</body>
+</html>
