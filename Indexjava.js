@@ -33,5 +33,5 @@
 		 alert("Whatsapp Number: 9746297764");
 		}
         function game(){
-            window.open("file:///C:/Users/sharm/OneDrive/Documents/myvscode/sss/game.html");
+            window.open("C:\Users\sharm\OneDrive\Documents\myvscode\sss\game.html");
         }

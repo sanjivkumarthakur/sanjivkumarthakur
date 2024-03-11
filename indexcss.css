@@ -70,13 +70,16 @@
          
         nav a::after{
             content: '';
-	width: 0%;
-	height: 3px;
-	background: red;
-	position: absolute;
-	bottom: -8px;
-	left: 0px;
-	transition: 0.5s;
+	        width: 0%;
+	        height: 3px;
+	        background: red;
+	        position: absolute;
+	        bottom: -8px;
+	        left: 0px;
+	        transition: 0.5s;
+        }
+        nav:hover{
+            background-color: rgb(from color red green blue);
         }
 
         section {
