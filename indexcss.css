@@ -1,0 +1,106 @@
+        /* Your existing styles */
+
+        /* Style for the login modal */
+        .login-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .login-modal label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .login-modal input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .login-modal button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        h1{
+            color: red;
+        }
+
+        p{color: green;,}
+        
+                body {
+            font-family: Monotype Corsiva, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 1em 0;
+            text-align: center;
+            
+        }
+
+        nav a {
+            color: chartreuse;
+            text-decoration: underline;
+            padding: 1em;
+            transition: 0.5px;
+            position: relative;
+        }
+         
+        nav a::after{
+            content: '';
+	width: 0%;
+	height: 3px;
+	background: red;
+	position: absolute;
+	bottom: -8px;
+	left: 0px;
+	transition: 0.5s;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: whitesmoke;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .photo-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .photo {
+            width: 30%;
+            margin: 10px;
+        }

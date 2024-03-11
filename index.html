@@ -4,50 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SANJIV KUMAR THAKUR - Personal Website</title>
-    <style>
-        /* Your existing styles */
-
-        /* Style for the login modal */
-        .login-modal {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            z-index: 999;
-        }
-
-        .login-modal label {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .login-modal input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-
-        .login-modal button {
-            background-color: #4caf50;
-            color: #fff;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        h1{
-            color: red;
-        }
-
-        p{color: green;,}
-        
-
-    </style>
+    <link rel="stylesheet" href="indexcss.css">
 </head>
 <body>
 
@@ -64,96 +21,11 @@
         <button onclick="checkLogin()">Login</button>
     </div>
 
-    <script>
-        // Your existing scripts
-
-        // Function to show the login modal
-        function showLoginModal() {
-            document.getElementById("loginModal").style.display = "block";
-        }
-
-        // Function to check login credentials
-        function checkLogin() {
-            var enteredUsernameOrEmail = document.getElementById("loginUsernameOrEmail").value;
-            var enteredPassword = document.getElementById("loginPassword").value;
-
-            // Check credentials (replace with your authentication logic)
-            if (enteredUsernameOrEmail === "Sanjiv" && enteredPassword === "Jaimatadi1@#") {
-                alert("Login successful! Welcome, Sanjiv Kumar Thakur!");
-                document.getElementById("loginModal").style.display = "none";
-            } else {
-                alert("Invalid credentials. Please try again.");
-            }
-        }
-    </script>
-
     <!-- Login button -->
     <button onclick="showLoginModal()">Login</button>
 
 </body>
 
-
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SANJIV KUMAR THAKUR - Personal Website</title>
-    <style>
-        body {
-            font-family: Monotype Corsiva, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: aqua;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        nav {
-            background-color: #444;
-            padding: 1em 0;
-            text-align: center;
-            
-        }
-
-        nav a {
-            color: chartreuse;
-            text-decoration: none;
-            padding: 1em;
-        }
-
-        section {
-            padding: 2em;
-        }
-
-        footer {
-            background-color: #333;
-            color: whitesmoke;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        .photo-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .photo {
-            width: 30%;
-            margin: 10px;
-        }
-    </style>
-</head>
 <body>
 
     <header>
@@ -188,9 +60,17 @@
     <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="photo-container">
-            <img class="photo" src="https://scontent.fktm17-1.fna.fbcdn.net/v/t39.30808-6/424905869_892933892571348_2750459713104305294_n.jpg?stp=cp6_dst-jpg_s851x315&_nc_cat=111&ccb=1-7&_nc_sid=3d9721&_nc_ohc=Z1XLzbtN_d4AX9RokuF&_nc_ht=scontent.fktm17-1.fna&oh=00_AfCEFUH1N8bSfnTo56cafdaNpZYR3jopAgYfppm0H1xtTQ&oe=65EA44B3" alt="Photo 1">
-            <img class="photo" src="https://scontent.fktm17-1.fna.fbcdn.net/v/t39.30808-6/410851630_857476509450420_7377395303619408556_n.jpg?stp=dst-jpg_s851x315&_nc_cat=106&ccb=1-7&_nc_sid=3d9721&_nc_ohc=Dmh1CDnm6wkAX8E975h&_nc_ht=scontent.fktm17-1.fna&oh=00_AfBVe1RRcUuquDvASG1qce7YxBxHX3-elMKl-paRGwiZVw&oe=65E960EB" alt="Photo 2">
-            <img class="photo" src="https://scontent.fktm17-1.fna.fbcdn.net/v/t39.30808-6/402153097_841818511016220_4436228592237869988_n.jpg?stp=c0.169.1536.1536a_cp6_dst-jpg_s851x315&_nc_cat=104&ccb=1-7&_nc_sid=3d9721&_nc_ohc=ooK7lIgAo2UAX-K77kd&_nc_ht=scontent.fktm17-1.fna&oh=00_AfBAloo94Bbapwf09tcdDypTH8vIKDC5hjPV3_JqRZrcKA&oe=65E8E6D3" alt="Photo 3">
+            <img class="photo" src="1.jpg" alt="Photo 1">
+            <img class="photo" src="2.jpg" alt="Photo 2">
+            <img class="photo" src="3.jpg" alt="Photo 3">
+        </div>
+    </section> <br>
+
+    <section id="Game">
+        <div class="Tic-Tac-Toe">
+            <button onclick="game()"> 
+                Play Game Here
+            </button>
         </div>
     </section>
 
@@ -208,23 +88,8 @@
    <footer>
         <p>&copy; 2024 Sanjiv Kumar Thakur - Personal Website</p>
     </footer>
- 
-
-    <script>
-        function changeBackgroundColor() {
-            const colors = ['#ffcc00', '#66ccff', '#ff99cc', '#99ff99', '#ccccff'];
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            document.body.style.backgroundColor = randomColor;
-        }
-		function Facebook()
-		{
-		  window.open("https://www.facebook.com/profile.php?id=100055642376948&mibextid=LQQJ4d");
-		}
-		function whatsapp()
-		{
-		 alert("Whatsapp Number: 9746297764");
-		}
-	</script>
+    
+    <script src="Indexjava.js"></script>
 
 </body>
 </html>
